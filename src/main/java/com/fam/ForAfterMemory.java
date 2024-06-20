@@ -12,5 +12,6 @@ public class ForAfterMemory implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("For Time Machine Server Minecrafter!");
+		LOGGER.info("Current Version : 0.0.1");
 	}
 }
