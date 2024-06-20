@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "foraftermemory",
+	"version": "${version}",
+	"name": "ForAfterMemory",
+	"description": "Only For user playing Minecraft at TimeMachine Server",
+	"authors": [
+		"FrogInMountain"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/foraftermemory/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.fam.ForAfterMemory"
+		],
+		"client": [
+			"com.fam.ForAfterMemoryClient"
+		],
+		"fabric-datagen": [
+			"com.fam.ForAfterMemoryDataGenerator"
+		]
+	},
+	"mixins": [
+		"foraftermemory.mixins.json",
+		{
+			"config": "foraftermemory.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
