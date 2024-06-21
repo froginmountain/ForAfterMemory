@@ -1,0 +1,4 @@
+{
+  "item.foraftermemory.ruby": "루비",
+  "item.foraftermemory.raw_ruby": "루비 원석"
+}
